@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-lentera-bg text-lentera-text;
+  }
+}
+
+.chat-bubble-ai {
+  @apply bg-lentera-base text-white rounded-2xl rounded-tl-none p-4 max-w-[80%] shadow-sm;
+}
+
+.chat-bubble-user {
+  @apply bg-lentera-highlight text-lentera-text rounded-2xl rounded-tr-none p-4 max-w-[80%] shadow-sm self-end;
+}
+
+.lentera-button-primary {
+  @apply bg-lentera-primary text-white font-semibold py-3 px-6 rounded-full hover:opacity-90 transition-opacity shadow-md;
+}
+
+.lentera-button-secondary {
+  @apply bg-white text-lentera-text border border-gray-200 font-semibold py-3 px-6 rounded-full hover:bg-gray-50 transition-colors shadow-sm;
+}
+
+.lentera-card {
+  @apply bg-white rounded-[2rem] p-6 shadow-sm border border-gray-100;
+}
