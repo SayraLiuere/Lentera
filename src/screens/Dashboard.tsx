@@ -1,5 +1,5 @@
-import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ComposedChart } from 'recharts'
-import { TrendingUp, Clock, CheckCircle, Flame, Info } from 'lucide-react'
+import { Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ComposedChart } from 'recharts'
+import { TrendingUp, Clock, CheckCircle, Flame } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const DATA = [
@@ -62,22 +62,10 @@ export default function Dashboard({ isMobileView = true }: { isMobileView?: bool
 
           {/* Chart Section */}
           <div className="bg-white p-8 rounded-[2.5rem] shadow-sm border border-gray-100 space-y-8">
-            <div className="flex items-center justify-between">
-              <h3 className="font-bold text-xl flex items-center gap-3">
+            <h3 className="font-bold text-xl flex items-center gap-3">
                 <TrendingUp className="w-6 h-6 text-lentera-primary" />
                 Double Helix Impact
               </h3>
-              <div className="flex items-center gap-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-lentera-base" />
-                  <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Mood</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-lentera-primary" />
-                  <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Hours</span>
-                </div>
-              </div>
-            </div>
 
             <div className={`${!isMobileView ? 'h-96' : 'h-64'} w-full`}>
               <ResponsiveContainer width="100%" height="100%">

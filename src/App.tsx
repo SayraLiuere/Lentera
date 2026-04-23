@@ -13,7 +13,7 @@ type Screen = 'landing' | 'onboarding' | 'chat' | 'dashboard' | 'settings'
 function App() {
   const [currentScreen, setCurrentScreen] = useState<Screen>('landing')
   const [isCrisisModalOpen, setIsCrisisModalOpen] = useState(false)
-  const [userPreferences, setUserPreferences] = useState<any>(null)
+  const [, setUserPreferences] = useState<any>(null)
   const [isMobileView, setIsMobileView] = useState(false) // Default is web view
   const [showSplash, setShowSplash] = useState(true)
 

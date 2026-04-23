@@ -1,4 +1,4 @@
-import { Phone, ExternalLink, Shield, Globe, Info, AlertCircle, X, Monitor, Smartphone } from 'lucide-react'
+import { Phone, ExternalLink, Shield, Globe, Info, AlertCircle, Monitor, Smartphone } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 interface CrisisModalProps {

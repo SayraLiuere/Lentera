@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Mic, Send, AlertCircle, MessageCircle, ChevronLeft } from 'lucide-react'
+import { Mic, Send, AlertCircle, MessageCircle } from 'lucide-react'
 import ActCard, { ActData } from '../components/ActCard'
 
 interface Message {
